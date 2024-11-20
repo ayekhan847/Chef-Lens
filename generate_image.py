@@ -1,8 +1,10 @@
 #This will have the AI image generation function for each step
 import openai
 import os
+import ayesha_key
+from ayesha_key import AYESHA_API
 
-openai.api_key = "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"
+openai.api_key = AYESHA_API
 
 def generate_image(step_text):
     try:
