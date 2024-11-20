@@ -2,3 +2,6 @@
 .idea
 .devcontainer
 
+
+# files to ignore:
+.config
