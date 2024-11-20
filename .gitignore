@@ -1,4 +1,5 @@
 .DS_Store
 .idea
 .devcontainer
-
+files to ignore:
+ayesha_key.py
