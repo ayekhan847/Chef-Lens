@@ -1,14 +1,12 @@
 #This will have the AI image generation function for each step
 import openai
 import os
-import ayesha_key
-from ayesha_key import AYESHA_API
 
-openai.api_key = AYESHA_API
+openai.api_key = os.getenv("AYESHA_API")
 
 def generate_image(step_text):
     try:
-        prompt = f"A detailed photograph of: {step_text}"
+        prompt = f"A high-quality, realistic photograph showing: {step_text}. No text in the image, clean background, professional food photography style."
 
         # Generate the image
         response = openai.Image.create(
